@@ -11,7 +11,14 @@ public class AddressBook {
     }
 
     public void addBuddy(BuddyInfo newBuddy){
-        buddyList.add(newBuddy);
+        for (int i = 0; i < buddyList.size(); i++){
+            if (buddyList.get(i).equals(newBuddy)){
+                System.out.println("Buddy already exists in the address book");
+            }
+            else{
+                buddyList.add(newBuddy);
+            }
+        }
     }
 
     public ArrayList getBuddy(){
