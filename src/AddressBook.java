@@ -6,6 +6,10 @@ public class AddressBook {
         this.buddyList = buddyList;
     }
 
+    public AddressBook(){
+
+    }
+
     public void addBuddy(BuddyInfo newBuddy){
         buddyList.add(newBuddy);
     }
@@ -27,5 +31,9 @@ public class AddressBook {
 
     public static void main(String[] args) {
         System.out.println("Address Book");
+        AddressBook ab = new AddressBook();
+        BuddyInfo bud = new BuddyInfo();
+        ab.addBuddy(bud);
+        ab.removeBuddy(bud);
     }
 }
