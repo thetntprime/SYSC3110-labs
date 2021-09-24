@@ -1,3 +1,4 @@
+//random words because the lab told me to
 public class BuddyInfo {
 
     private String buddyName;
